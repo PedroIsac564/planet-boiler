@@ -1,4 +1,4 @@
-export default class User {
+export default class Planet {
   constructor(id, name, email, age) {
     this.id = id;
     this.name = name;
