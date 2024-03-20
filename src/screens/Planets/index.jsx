@@ -22,10 +22,8 @@ export default function Planets() {
   const [color1, setColor1] = useState("");
   const [color2, setColor2] = useState("");
   const [population, setPopulation] = useState("");
-  const [location, setLocation] = useState("");
   const [galaxy, setGalaxy] = useState("");
   const [solarSistem, setSolarSistem] = useState("");
-  const [spatialCoordinates, setSpatialCoordinates] = useState("");
   const [rulerPlanet, setRulerPlanet] = useState("");
   const [x, setX] = useState("");
   const [y, setY] = useState("");
@@ -41,10 +39,8 @@ export default function Planets() {
       color1,
       color2,
       parseInt(population) || 0,
-      location,
       galaxy,
       solarSistem,
-      spatialCoordinates,
       x,
       y,
       z,
@@ -65,10 +61,8 @@ export default function Planets() {
     setColor1("");
     setColor2("");
     setPopulation;
-    setLocation("");
     setGalaxy("");
     setSolarSistem("");
-    setSpatialCoordinates("");
     setX("");
     setY("");
     setZ("");

@@ -3,14 +3,10 @@ export const planet = {
   dominationData: "",
   color1: "",
   color2: "",
-  location: {
-    galaxy: "Via Láctea",
-    solarSistem: "Sistema Solar",
-    spatialCoordinates: {
-      x: 0,
-      y: 0,
-      z: 0
-    }
-  },
+  galaxy: "Via Láctea",
+  solarSistem: "Sistema Solar",
+  x: 0,
+  y: 0,
+  z: 0,
   rulerPlanet: "",
 };

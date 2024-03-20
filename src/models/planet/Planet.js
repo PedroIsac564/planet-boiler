@@ -6,10 +6,8 @@ export default class Planet {
     this.color1 = color1;
     this.color2 = color2;
     this.population = population;
-    this.location = location;
     this.galaxy = galaxy;
     this.solarSistem = solarSistem;
-    this.spatialCoordinates = spatialCoordinates;
     this.x = x;
     this.y = y;
     this.z = z;
