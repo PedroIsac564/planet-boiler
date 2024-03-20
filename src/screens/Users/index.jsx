@@ -4,7 +4,7 @@ import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
-import { user } from "../../data/Profile";
+import { user } from "../../data/Planets";
 
 import User from "../../models/user/User";
 import UsersRepository from "../../models/user/UserRepository";
