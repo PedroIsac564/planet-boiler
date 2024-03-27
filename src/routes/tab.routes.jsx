@@ -90,12 +90,13 @@ import { Feather } from "@expo/vector-icons";
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Form from "../screens/Form";
-import Users from "../screens/Users";
-import { user } from "../data/Profile";
+import Planets from "../screens/Planets";
+import { planet } from "../data/Planets";
 
-import usersRepository from "../models/user/UserRepository";
+import planetsRepository from "../models/planet/PlanetRepository";
+import Planet from "../models/planet/Planet";
 
-const users = usersRepository.getAll();
+const planets = planetsRepository.getAll();
 
 const Tab = createBottomTabNavigator();
 
@@ -123,13 +124,13 @@ const TabRoutes = () => {
       />
 
       <Tab.Screen
-        name="Users"
-        component={Users}
-        initialParams={{ users }}
+        name="Planets"
+        component={planets}
+        initialParams={{ planets }}
         options={{
           tabBarIcon: ({ focused }) => (
             <Feather
-              name="users"
+              name="planets"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
@@ -141,21 +142,21 @@ const TabRoutes = () => {
       />
 
       <Tab.Screen
-        name="Profile"
-        component={Profile}
-        initialParams={{ data: user }}
+        name="Planet"
+        component={Planet}
+        initialParams={{ data: planet }}
         options={{
           tabBarItemStyle: {
             display: "none",
           },
           tabBarIcon: ({ focused }) => (
             <Feather
-              name="user"
+              name="planet"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
           ),
-          tabBarLabel: "Perfil",
+          tabBarLabel: "Planeta",
           tabBarActiveTintColor: "#131313",
           tabBarInactiveTintColor: "#D6D6D6",
         }}
@@ -164,7 +165,7 @@ const TabRoutes = () => {
       <Tab.Screen
         name="Form"
         component={Form}
-        initialParams={{ user: null, edit: false }}
+        initialParams={{ planet: null, edit: false }}
         options={{
           tabBarIcon: ({ focused }) => (
             <Feather
