@@ -3,7 +3,7 @@ import { View } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
-import { user } from "../../data/Profile";
+import { planet } from "../../data/Planets";
 
 export default function Category() {
   return (
@@ -12,7 +12,7 @@ export default function Category() {
 
       <TouchButton route="Category" title="Go to Category" />
 
-      <TouchButton route="Profile" title="Go to Profile" data={user} />
+      <TouchButton route="Profile" title="Go to Profile" data={planet} />
     </View>
   );
 }

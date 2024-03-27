@@ -1,4 +1,6 @@
-export default class UsersRepository {
+import { user } from "../../data/Profile";
+import User from "./User";
+class UsersRepository {
   constructor() {
     this.users = [];
   }
@@ -30,3 +32,10 @@ export default class UsersRepository {
     return user;
   }
 }
+
+const usersRepository = new UsersRepository();
+const newUser = new User(user.name, user.email, parseInt(user.age) || 0);
+
+usersRepository.add(newUser);
+
+export default usersRepository;

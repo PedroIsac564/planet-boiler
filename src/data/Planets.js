@@ -1,12 +1,12 @@
 export const planet = {
   name: "Terra",
-  dominationData: "",
-  color1: "",
-  color2: "",
+  dominationData: "ano 0",
+  color1: "green",
+  color2: "brown",
   galaxy: "Via Láctea",
   solarSistem: "Sistema Solar",
   x: 0,
   y: 0,
   z: 0,
-  rulerPlanet: "",
+  rulerPlanet: "God",
 };

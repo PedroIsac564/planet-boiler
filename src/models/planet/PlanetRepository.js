@@ -1,4 +1,7 @@
-export default class PlanetsRepository {
+import { planet } from '../../data/Planets';
+import Planet from './Planet';
+
+class PlanetsRepository {
   constructor() {
     this.planets = [];
   }
@@ -34,3 +37,10 @@ export default class PlanetsRepository {
     return planet;
   }
 }
+
+const planetsRepository = new PlanetsRepository();
+const newPlanet = new Planet(planet.name, planet.dominationData, planet.color1, planet.color2, planet.population, planet.location, planet.rulerPlanet, planet.x, planet.y, planet.z);
+
+planetsRepository.add(newPlanet);
+
+export default planetsRepository;
